@@ -1,5 +1,34 @@
 <!--pages/todorepo/todorepo.wxml-->
-<text>pages/todorepo/todorepo.wxml</text>
-<view>
-  <navigator url="/pages/lyh/lyh">转到拉取任务</navigator>
+<view class="TOP">
+<view class="cst1"><!--常数字-->
+  <text class="t1">星期二</text>
+  <text class="t2">本轮时间段</text>
+  <text class="t3">待办数</text>
 </view>
+  
+</view>
+<view class="MID">
+<view class="cst2">
+  <text class="t4">STARS</text>
+  <text class="t5">EVENTS</text>
+</view>
+
+<view wx:for="{{5}}">
+  <view class="se" style="display:flex;" >
+  <image class="star1" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star2" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star3" src="/img/star.png" mode="aspectFit"></image>
+
+  <view class="event"></view>
+  </view>
+</view>
+
+<image class="time" src="/img/time.png" mode="aspectFit"></image>
+  <image class="add" src="/img/add-circle.png" mode="aspectFit"></image>
+
+
+
+
+
+</view>
+<view><navigator url="/pages/lyh/lyh">转到拉取任务</navigator></view>

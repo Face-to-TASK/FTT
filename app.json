@@ -7,8 +7,8 @@
     "pages/user/user",
     "pages/index/index",
     "pages/logs/logs"
-
-  ],
+  
+    ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#3BC2AE",
@@ -23,6 +23,7 @@
       "text":"任务库",
       "iconPath": "/img/todorepo.png",
       "selectedIconPath": "/img/todorepo_sl.png"
+      
     },{
       "pagePath": "pages/schedule/schedule",
       "text": "日程",
