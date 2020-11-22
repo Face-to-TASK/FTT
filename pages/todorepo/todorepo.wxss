@@ -17,5 +17,7 @@
    border-radius: 20rpx;
    padding: 10rpx;
  }
- .time{width: 120rpx;height: 120rpx;margin-left: 95rpx;margin-top: 180rpx;}
- .add{width: 120rpx;height: 120rpx;margin-left: 300rpx;margin-top: 180rpx;}
+ 
+
+ .time{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
+ .add{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;right:90rpx ;}

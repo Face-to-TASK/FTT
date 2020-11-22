@@ -1,4 +1,4 @@
-// pages/todorepo/todorepo.js
+// pages/lyh/lyh.js
 Page({
 
   /**
@@ -55,6 +55,21 @@ Page({
    */
   onReachBottom: function () {
 
+  },
+  tap2: function () {
+ 
+    wx.navigateTo({
+ 
+      url: '/pages/lyh/lyh',
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
   },
 
   /**

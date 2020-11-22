@@ -13,7 +13,7 @@
   <text class="t5">EVENTS</text>
 </view>
 
-<view wx:for="{{5}}">
+<view wx:for="{{10}}">
   <view class="se" style="display:flex;" >
   <image class="star1" src="/img/star.png" mode="aspectFit"></image>
   <image class="star2" src="/img/star.png" mode="aspectFit"></image>
@@ -22,13 +22,13 @@
   <view class="event"></view>
   </view>
 </view>
+<view class="time" hover-class="plus-over" bindtap="tap1">
+  <image class="time" src="/img/time.png" mode="aspectFit" ></image>
+</view>
 
-<image class="time" src="/img/time.png" mode="aspectFit"></image>
-  <image class="add" src="/img/add-circle.png" mode="aspectFit"></image>
-
-
-
+<view class="time-add" hover-class="plus-over" bindtap="tap2">
+   <image class="add" src="/img/add-circle.png" mode="aspectFit"></image>
+</view>
 
 
 </view>
-<view><navigator url="/pages/lyh/lyh">转到拉取任务</navigator></view>
