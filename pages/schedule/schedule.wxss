@@ -1,1 +1,23 @@
-/* pages/schedule/schedule.wxss */
+/* pages/todorepo/todorepo.wxss */
+.TOP{width:750rpx;height: 240rpx;background:rgb(85, 211, 162);overflow: hidden;}
+.cst1{margin-top: 140rpx;color: honeydew;font-size: 25rpx;}
+.t1{margin-left: 118.75rpx;margin-right: 118.75rpx;}
+.t2{margin-right: 118.75rpx;}
+.cst2{margin-top: 20rpx;color:black;font-size: 25rpx;}
+.t4{margin-left: 118.75rpx;margin-right: 118.75rpx;}
+.se{margin-top: 50rpx;}
+.star1{width: 40rpx;height: 40rpx;margin-left: 95rpx;margin-top: 10rpx;}
+.star2{width: 40rpx;height: 40rpx;margin-top: 10rpx;}
+.star3{width: 40rpx;height: 40rpx;margin-top: 10rpx;}
+.event{
+  margin-left: 100rpx;
+  width: 350rpx;
+  height: 50rpx;
+  border: 3rpx solid black;
+   border-radius: 20rpx;
+   padding: 10rpx;
+ }
+ 
+
+ .time{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
+ .add{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;right:90rpx ;}

@@ -1,4 +1,4 @@
-// pages/schedule/schedule.js
+// pages/lyh/lyh.js
 Page({
 
   /**
@@ -55,6 +55,21 @@ Page({
    */
   onReachBottom: function () {
 
+  },
+  tap2: function () {
+ 
+    wx.navigateTo({
+ 
+      url: '/pages/todopull/todopull',
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
   },
 
   /**

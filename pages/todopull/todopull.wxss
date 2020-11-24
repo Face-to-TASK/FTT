@@ -1,0 +1,47 @@
+/* pages/lyh/lyh.wxss */
+.TodoContainer{
+  display:flex;
+  flex-flow: column;
+  margin: 10px 5px;
+}
+.TodoItemTitle{
+  display: flex;
+  justify-content: space-between;
+  margin:5px
+}
+.TodoItemTitleText{
+  font-size: small;
+  margin:0 25px;
+}
+.TodoItem{
+  display: flex;
+
+  height:65px ;
+  margin: 5px 5px;
+
+  border:1px solid #BBBBBB;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 9px;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+.ItemComponent{
+  display: flex;
+
+
+  margin: 0 10px;
+}
+
+
+.TodoEndline{
+  margin: 20px 80px;
+  height: 1px;
+ background-color: #bbbbbb;
+
+}
+.star{
+  height:24px;
+  width: 24px;
+}

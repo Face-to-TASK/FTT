@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/todorepo/todorepo",
-    "pages/lyh/lyh",
+    "pages/todopull/todopull",
     "pages/schedule/schedule",
     "pages/todoreport/todoreport",
     "pages/user/user",
@@ -19,16 +19,16 @@
 
     
     "list": [{
+      "pagePath": "pages/schedule/schedule",
+      "text": "日程",
+      "iconPath": "/img/schedule.png",
+      "selectedIconPath": "/img/schedule_sl.png"
+    },{
       "pagePath": "pages/todorepo/todorepo",
       "text":"任务库",
       "iconPath": "/img/todorepo.png",
       "selectedIconPath": "/img/todorepo_sl.png"
       
-    },{
-      "pagePath": "pages/schedule/schedule",
-      "text": "日程",
-      "iconPath": "/img/schedule.png",
-      "selectedIconPath": "/img/schedule_sl.png"
     },{
       "pagePath": "pages/todoreport/todoreport",
       "text": "任务报告",
