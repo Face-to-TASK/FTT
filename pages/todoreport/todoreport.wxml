@@ -1,2 +1,34 @@
-<!--pages/todoreport/todoreport.wxml-->
-<text>pages/todoreport/todoreport.wxml</text>
+<view class="date">
+<view class="week">
+<view class="char1">\t</view>
+<view class="char1">日</view>
+<view class="char1">一</view>
+<view class="char1">二</view>
+<view class="char1">三</view>
+<view class="char1">四</view>
+<view class="char1">五</view>
+<view class="char1">六</view>  
+</view>
+<view class="day" wx:for="{{[0,1,2,3,4]}}" wx:for-item="i">
+<view class="line">\t</view>
+<view class="line" wx:for="{{7}}" hover-class="click">{{index+i*7+1}}</view>
+</view>
+<text>\n</text>
+<view class="report">
+
+<view class="title">任务报告</view>
+<text>\n</text>
+<view class="backg">
+  <text>\n</text>
+<view class="fin">已完成：10</view>
+<text>\n</text>
+<view class="fin">未完成：1</view>
+<text>\n</text>
+<view class="tex">距离今天的目标</view>
+<view class="tex">还差了一点</view>
+<view class="tex">继续努力吧</view>
+</view>
+</view>
+</view>
+
+

@@ -1,1 +1,21 @@
 /* pages/todoreport/todoreport.wxss */
+.week{background-color:rgb(85, 211, 162);
+display: flex;
+flex-direction: row;
+}
+.char1{color: aliceblue;width: 100px;justify-content: space-around;}
+.day{background-color:rgb(85, 211, 162);
+display: flex;
+flex-direction: row;
+color: aliceblue;
+align-items: center;
+height: 40px;}
+.line{width: 100px;}
+.click{background-color: darkseagreen;}
+.report{display: flex;flex-direction: column;justify-content: flex-start;align-items: center;}
+.title{color: rgb(85, 211, 162);border:1px solid rgb(85, 211, 162);width: 200px;display: flex;justify-content: space-around;}
+.backg{background-color: rgb(85, 211, 162);height: 250px;width: 200px;
+  display: flex;flex-direction: column;justify-content:flex-start;align-items: center;}
+.fin{color:rgb(85, 211, 162);background-color: white;width: 100px;
+  display: flex;flex-direction: column;justify-content:flex-start;align-items: center;}
+.tex{color:white;}
