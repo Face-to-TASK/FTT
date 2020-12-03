@@ -4,30 +4,28 @@
     <view class="TodoItemTitleText">Event</view>
     <view class="TodoItemTitleText">Star</view>
   </view>
+
+<block wx:for="{{todolist}}" wx:key="index">
   <view class="TodoItem">
-    <view class="ItemComponent">任务1</view>
+    <view class="ItemComponent">{{item.event}}</view>
      <view class="ItemComponent">
+     <block wx:if="{{item.star<=3 && item.star>=0}}">
+      <image wx:for="{{3-item.star}}" wx:key="index" class="star" src="/img/star.png"></image>
+      <image wx:for="{{item.star}}" wx:key="index" class="star" src="/img/star_sl.png"></image>
+     </block>
+     <block wx:else>
+       <text style="color:red">错误</text>
+     </block>
+     <!--
       <image class="star" src="/img/star.png"></image>
       <image class="star" src="/img/star.png"></image>
       <image class="star" src="/img/star.png"></image>
+      -->
      </view>
   </view>
-  <view class="TodoItem">
-    <view class="ItemComponent">任务2</view>
-     <view class="ItemComponent">
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-     </view>
-  </view>
-  <view class="TodoItem">
-    <view class="ItemComponent">任务3</view>
-     <view class="ItemComponent">
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-     </view>
-  </view>
+
+</block>
+
   <view class="TodoEndline">
   </view>
 </view>

@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    todolist:[
+    {event:"任务一",star:3},
+    {event:"任务二",star:2},
+    {event:"任务三",star:1},
+    {event:"任务四",star:0}
+    ]
   },
 
   /**
