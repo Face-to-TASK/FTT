@@ -1,7 +1,4 @@
 <!--pages/addTask/addTask.wxml-->
-
-<!--
-
 <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd">
@@ -21,7 +18,7 @@
                 </mp-checkbox-group>
             </mp-cells>
 
-<<<<<<< HEAD
+
             <mp-cells title="表单" footer="底部说明文字底部说明文字">
                 <mp-cell prop="qq" title="qq" ext-class="">
                     <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入qq"/>
@@ -72,7 +69,4 @@
         </view>
     </view>
 </view>
-<<<<<<< HEAD
--->
-=======
->>>>>>> dev
+

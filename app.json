@@ -11,10 +11,8 @@
     "pages/user/user",
     "pages/index/index",
     "pages/addTask/addTask",
-
     "pages/logs/logs",
     "pages/notice/notice"
-
 
     ],
     "window": {
