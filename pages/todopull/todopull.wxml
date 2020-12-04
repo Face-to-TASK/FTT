@@ -9,21 +9,16 @@
   <view class="TodoItem">
     <view class="ItemComponent">{{item.event}}</view>
      <view class="ItemComponent">
-     <block wx:if="{{item.star<=3 && item.star>=0}}">
-      <image wx:for="{{3-item.star}}" wx:key="index" class="star" src="/img/star.png"></image>
-      <image wx:for="{{item.star}}" wx:key="index" class="star" src="/img/star_sl.png"></image>
-     </block>
-     <block wx:else>
-       <text style="color:red">错误</text>
-     </block>
-     <!--
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      -->
+      <block wx:if="{{item.star<=3 && item.star>=0}}">
+        <image wx:for="{{3-item.star}}" wx:key="index" class="star" src="/img/star.png"></image>
+        <image wx:for="{{item.star}}" wx:key="index" class="star" src="/img/star_sl.png"></image>
+      </block>
+      <block wx:else>
+        <text style="color:red">错误</text>
+      </block>
      </view>
   </view>
-
+  
 </block>
 
   <view class="TodoEndline">
