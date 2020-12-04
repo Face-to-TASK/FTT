@@ -22,5 +22,5 @@
  }
  
 
- .time{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
- .add{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;right:90rpx ;}
+ .time{width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
+ .add{width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;right:90rpx ;}

@@ -28,12 +28,11 @@
   </view>
 </view>
 <view class="time" hover-class="plus-over" bindtap="tap1">
-  <image class="time" src="/img/time.png" mode="aspectFit" ></image>
+  <image class="time" src="/img/clock.png" mode="aspectFit" ></image>
 </view>
 
 <view class="time-add" hover-class="plus-over" bindtap="tap2">
-   <image class="add" src="/img/add-circle.png" mode="aspectFit"></image>
+   <image class="add" src="/img/plus.png" mode="aspectFit"></image>
 </view>
-
 
 </view>

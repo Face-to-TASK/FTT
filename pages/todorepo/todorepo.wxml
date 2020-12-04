@@ -1,2 +1,38 @@
-<!--pages/schedule/schedule.wxml-->
-<text>pages/schedule/schedule.wxml</text>
+
+<view class="head">
+  <view class="headNum">
+    555  
+  </view>
+ <view class="headWord">
+    任务数
+ </view>
+</view>
+
+
+<view class="tip">
+  <view class="word">
+    全部任务
+  </view>
+</view>
+
+<block wx:for="{{task}}">
+  <view class="weui-slidecells">
+        <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+          <view class="weui-slidecell">
+            {{item.name}}）
+          </view>
+        </mp-slideview>
+      </view>
+</block>
+
+<view class="time-add" hover-class="plus-over" bindtap="tap1">
+   <image class="add" src="/img/plus.png" mode="aspectFit"></image>
+</view>
+
+<view class="time-add" hover-class="plus-over" bindtap="tap2">
+   <image class="gar" src="/img/Garbage.png" mode="aspectFit"></image>
+</view>
+
+<view class="time-add" hover-class="plus-over" bindtap="tap3">
+   <image class="hea" src="/img/Heart.png" mode="aspectFit"></image>
+</view>

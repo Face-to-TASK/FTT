@@ -1,4 +1,8 @@
 {
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
   "pages":[
     "pages/schedule/schedule", 
     "pages/todorepo/todorepo",
@@ -6,7 +10,9 @@
     "pages/todoreport/todoreport",
     "pages/user/user",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/addTask/addTask",
+    "pages/logs/logs",
+    "pages/notice/notice"
   
     ],
     "window": {

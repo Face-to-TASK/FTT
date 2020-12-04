@@ -14,7 +14,7 @@
     "coverView": true,
     "nodeModules": false,
     "autoAudits": false,
-    "showShadowRootInWxmlPanel": true,
+    "showShadowRootInWxmlPanel": false,
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
@@ -62,6 +62,30 @@
         {
           "name": "pages/todoreport/todoreport",
           "pathName": "pages/todoreport/todoreport",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/schedule/schedule",
+          "pathName": "pages/schedule/schedule",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/todopull/todopull",
+          "pathName": "pages/todopull/todopull",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addTask/addTask",
+          "pathName": "pages/addTask/addTask",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/todorepo/todorepo",
+          "pathName": "pages/todorepo/todorepo",
           "scene": null
         }
       ]
