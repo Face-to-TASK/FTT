@@ -1,15 +1,4 @@
 {
-<<<<<<< Updated upstream
-    "pages": [
-        "pages/todorepo/todorepo",
-        "pages/todopull/todopull",
-        "pages/schedule/schedule",
-        "pages/todoreport/todoreport",
-        "pages/user/user",
-        "pages/index/index",
-        "pages/logs/logs",
-        "pages/notice/notice"
-=======
   "pages":[
     "pages/schedule/schedule", 
     "pages/todorepo/todorepo",
@@ -19,7 +8,6 @@
     "pages/index/index",
     "pages/logs/logs"
   
->>>>>>> Stashed changes
     ],
     "window": {
         "backgroundTextStyle": "light",
