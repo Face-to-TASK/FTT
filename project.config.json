@@ -68,7 +68,7 @@
           "scene": null
         },
         {
-<<<<<<< HEAD
+
           "name": "pages/schedule/schedule",
           "pathName": "pages/schedule/schedule",
           "query": "",
@@ -89,10 +89,7 @@
         {
           "name": "pages/todorepo/todorepo",
           "pathName": "pages/todorepo/todorepo",
-=======
-          "name": "pages/todopull/todopull",
-          "pathName": "pages/todopull/todopull",
->>>>>>> 47cca99... 1
+
           "scene": null
         }
       ]

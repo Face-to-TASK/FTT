@@ -9,17 +9,13 @@
     "pages/todopull/todopull",
     "pages/todoreport/todoreport",
     "pages/user/user",
-    "pages/notice/notice",
     "pages/index/index",
     "pages/addTask/addTask",
-<<<<<<< HEAD
+
     "pages/logs/logs",
     "pages/notice/notice"
 
-=======
-    "pages/logs/logs"
-  
->>>>>>> dev
+
     ],
     "window": {
         "backgroundTextStyle": "light",
