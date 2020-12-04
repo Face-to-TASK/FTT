@@ -1,6 +1,11 @@
 <!--pages/todorepo/todorepo.wxml-->
 <view class="TOP">
-<view class="cst1"><!--常数字-->
+<view class="var1"><!--变量字段-->
+<text class="v1">{{getmonth}}月{{getday}}日</text>
+<text class="v2">11：00-12：00</text>
+<text class="v3">5</text>
+  </view>
+<view class="cst1"><!--常数字段-->
   <text class="t1">星期{{weekday}}</text>
   <text class="t2">本轮时间段</text>
   <text class="t3">待办数</text>

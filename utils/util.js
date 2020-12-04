@@ -14,6 +14,14 @@ const getWeekByDate = dates => {
   let day = date.getDay();
   return show_day[day];
 }
+const  getmonth = date=>{
+  const month = date.getMonth() + 1
+  return [month]
+}
+const  getday = date=>{
+  const day = date.getDate()
+  return [day]
+}
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -21,5 +29,7 @@ const formatNumber = n => {
 
 module.exports = {
   formatTime: formatTime,
-  getWeekByDate:getWeekByDate
+  getWeekByDate:getWeekByDate,
+  getmonth:getmonth,
+  getday:getday
 }

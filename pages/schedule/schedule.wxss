@@ -1,6 +1,9 @@
 /* pages/todorepo/todorepo.wxss */
 .TOP{width:750rpx;height: 240rpx;background:rgb(85, 211, 162);overflow: hidden;}
-.cst1{margin-top: 140rpx;color: honeydew;font-size: 25rpx;}
+.var1{color: honeydew;font-size: 23rpx;margin-top: 100rpx;}
+.v1{margin-left: 115rpx;margin-right: 115rpx;}
+.v2{margin-right: 135rpx;}
+.cst1{margin-top: 20rpx;color: honeydew;font-size: 25rpx;}
 .t1{margin-left: 118.75rpx;margin-right: 118.75rpx;}
 .t2{margin-right: 118.75rpx;}
 .cst2{margin-top: 20rpx;color:black;font-size: 25rpx;}
