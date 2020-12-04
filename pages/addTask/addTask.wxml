@@ -1,9 +1,7 @@
 <!--pages/addTask/addTask.wxml-->
-<<<<<<< HEAD
-<!--
-=======
 
->>>>>>> dev
+<!--
+
 <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd">
@@ -44,8 +42,7 @@
                     <input bindinput="formInputChange" data-field="idcard" class="weui-input" placeholder="请输入卡号"/>
                 </mp-cell>
             </mp-cells>
-=======
->>>>>>> dev
+
         </mp-form>
 
      

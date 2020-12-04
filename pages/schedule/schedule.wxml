@@ -18,7 +18,7 @@
   <text class="t5">EVENTS</text>
 </view>
 
-<view wx:for="{{text}}">
+<view wx:for="{{text}}" wx:key="index">
   <view class="se" style="display:flex;" >
   <image class="star1" src="/img/star.png" mode="aspectFit"></image>
   <image class="star2" src="/img/star.png" mode="aspectFit"></image>
