@@ -72,6 +72,26 @@ Page({
  
   },
 
+
+
+  tap1: function () {
+ 
+    wx.navigateTo({
+ 
+      url: '/pages/notice/notice',
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
+  },
+
+
+
   /**
    * 用户点击右上角分享
    */
