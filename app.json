@@ -13,7 +13,7 @@
     "pages/addTask/addTask",
     "pages/logs/logs",
     "pages/notice/notice"
-  
+
     ],
     "window": {
         "backgroundTextStyle": "light",
