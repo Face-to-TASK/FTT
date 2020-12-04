@@ -1,7 +1,7 @@
 <!--pages/todorepo/todorepo.wxml-->
 <view class="TOP">
 <view class="cst1"><!--常数字-->
-  <text class="t1">星期二</text>
+  <text class="t1">星期{{weekday}}</text>
   <text class="t2">本轮时间段</text>
   <text class="t3">待办数</text>
 </view>
@@ -13,13 +13,13 @@
   <text class="t5">EVENTS</text>
 </view>
 
-<view wx:for="{{10}}">
+<view wx:for="{{text}}">
   <view class="se" style="display:flex;" >
   <image class="star1" src="/img/star.png" mode="aspectFit"></image>
   <image class="star2" src="/img/star.png" mode="aspectFit"></image>
   <image class="star3" src="/img/star.png" mode="aspectFit"></image>
 
-  <view class="event"></view>
+  <view class="event">{{item}}</view>
   </view>
 </view>
 <view class="time" hover-class="plus-over" bindtap="tap1">
