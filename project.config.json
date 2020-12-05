@@ -68,7 +68,6 @@
           "scene": null
         },
         {
-
           "name": "pages/schedule/schedule",
           "pathName": "pages/schedule/schedule",
           "query": "",
@@ -89,7 +88,6 @@
         {
           "name": "pages/todorepo/todorepo",
           "pathName": "pages/todorepo/todorepo",
-
           "scene": null
         }
       ]

@@ -5,23 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-    todolist:[
-    {event:"任务一",star:3},
-    {event:"任务二",star:2},
-    {event:"任务三",star:1},
-    {event:"任务四",star:0},
-    {event:"任务四",star:0},
-    {event:"任务四",star:0},
-    {event:"任务四",star:0},
-    {event:"任务四",star:0}
-    ]
+    todolist:[]
+  },
+  /******点亮星 */
+  light_star:function(res){
+    console.log(res.currentTarget.dataset)
+  },
+  /**取消点亮星 */
+  gloom_star:function(res){
+    console.log(res.currentTarget.dataset)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      todolist:[
+        {event:"任务1",star:3},
+        {event:"任务2",star:2},
+        {event:"任务3",star:1},
+        {event:"任务4",star:0},
+        {event:"任务5",star:0},
+        {event:"任务6",star:0},
+        {event:"任务7",star:0},
+        {event:"任务8",star:0}
+        ]
+    })
   },
 
   /**
