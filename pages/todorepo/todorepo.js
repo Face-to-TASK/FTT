@@ -7,6 +7,20 @@ Page({
       {name:'waibibabo'}
     ]
   },
+  tap1: function () {
+ 
+    wx.navigateTo({
+      url:"/pages/addTask/addTask",
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
+  },
   tap2: function () {
  
     wx.navigateTo({
