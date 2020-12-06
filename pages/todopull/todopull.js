@@ -7,13 +7,34 @@ Page({
   data: {
     todolist:[]
   },
+
   /******点亮星 */
   light_star:function(res){
-    console.log(res.currentTarget.dataset)
+    let dataget = res.currentTarget.dataset
+    let todolist = this.data.todolist
+    
+    todolist[dataget.tap_event_num].star = (3 - dataget.tap_star_num)
+    this.setData({
+      todolist
+    })
+    console.log(this.data.todolist)
+
   },
+
   /**取消点亮星 */
   gloom_star:function(res){
-    console.log(res.currentTarget.dataset)
+    let dataget = res.currentTarget.dataset
+    let todolist = this.data.todolist
+    
+    /**要区分是否点到最左的星 */
+    todolist[dataget.tap_event_num].star -= 
+      dataget.tap_star_num + (dataget.tap_star_num?0:1)
+    this.setData({
+      todolist
+    })
+    
+    console.log(this.data.todolist)
+
   },
 
   /**
