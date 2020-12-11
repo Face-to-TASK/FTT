@@ -15,11 +15,11 @@
   </view>
 </view>
 
-<block wx:for="{{task}}">
+<block wx:for="{{task}}" wx:key="key">
   <view class="weui-slidecells">
         <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
           <view class="weui-slidecell">
-            {{item.name}}）
+            {{item}}
           </view>
         </mp-slideview>
       </view>

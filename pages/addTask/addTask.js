@@ -1,4 +1,8 @@
+var app=getApp();
+
 Page({
+  
+
   onShareAppMessage() {
     return {
       title: 'form',
@@ -8,7 +12,8 @@ Page({
 
   data: {
     pickerHidden: true,
-    chosen: ''
+    chosen: '',
+    test:'555'
   },
 
   pickerConfirm(e) {
@@ -32,9 +37,15 @@ Page({
     })
   },
 
+  onLoad:function(){
+   
+  },
+
   formSubmit(e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-    
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    app.globalData.task[app.globalData.num]=e.detail.value;
+    app.globalData.num +=1;
+    console.log(app.globalData.num,' ',app.globalData.task[app.globalData.num-1])
   },
 
   formReset(e) {

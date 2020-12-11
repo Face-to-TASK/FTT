@@ -1,12 +1,52 @@
 
+let app=getApp()
+
 Page({
+  
+  
   data: {
+    testLocal:'test',
+
     task:[
-      {name:'1'},
-      {name:'2'},
-      {name:'waibibabo'}
+      '1','2','waibibabo'
     ]
   },
+
+  onLoad: function(){
+    this.setData({
+       
+        slideButtons: [{
+          type: 'warn',
+          text: '删除',
+          src:'/img/删 除 .png'
+          
+        }],
+    });
+
+    //console.log(app.globalData.task[app.globalData.num]);
+
+    for (let index = 0; index < app.globalData.num; index++) {
+      //task[index].name = app.globalData.task[index];
+     //console.log(task[index].name);
+    }
+
+  },
+
+  onShow: function () {
+    console.log("begin");
+    var k = this.data;
+    
+    for (let index = 0; index < app.globalData.num; index++) {
+      console.log(app.globalData.task[index])
+      this.setData({ 
+        
+        'task[index]' : app.globalData.task[index]
+      });
+
+     // console.log(k.task[index]);
+    }
+  },
+
   tap1: function () {
  
     wx.navigateTo({
@@ -18,14 +58,16 @@ Page({
  
       complete: function (res) { },
  
-    })
+    });
+
+   
  
   },
   tap2: function () {
- 
+    console.log(app.globalData.task[app.globalData.num-1]),
     wx.navigateTo({
  
- 
+      
       success: function (res) { },
  
       fail: function (res) { },
@@ -35,17 +77,7 @@ Page({
     })
  
   },
-    onLoad: function(){
-        this.setData({
-           
-            slideButtons: [{
-              type: 'warn',
-              text: '删除',
-              src:'/img/删 除 .png'
-              
-            }],
-        });
-    },
+    
     slideButtonTap(e) {
         console.log('slide button tap', e.detail)
     }
