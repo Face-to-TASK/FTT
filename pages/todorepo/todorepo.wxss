@@ -27,10 +27,12 @@
 .task .icon-small-wrp{margin-right: 10rpx;}
 
 .weui-slidecells{
+  
   margin:8px;
 }
 .weui-slidecell{
 
+  z-index: 1;
   margin: 5px 5px;
   border:1px solid #BBBBBB;
   box-shadow: 0px 13px 5px #dbdada;
@@ -48,6 +50,6 @@
   color:rgba(0,0,0,.5);
 }
 
-.add{width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;right:90rpx ;}
-.gar{width: 80rpx;height: 80rpx;position: fixed;bottom: 210rpx;right:90rpx ;}
+.add{position: absolute;z-index: 222; width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;right:90rpx ;}
+.gar{position: absolute;z-index: 222; width: 80rpx;height: 80rpx;position: fixed;bottom: 210rpx;right:90rpx ;}
 .hea{width: 80rpx;height: 80rpx;position: fixed;bottom: 350rpx;right:90rpx ;}
