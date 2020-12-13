@@ -1,7 +1,7 @@
 
 <view class="head">
   <view class="headNum">
-    555  
+   {{num}} 
   </view>
  <view class="headWord">
     任务数
@@ -19,7 +19,7 @@
   <view class="weui-slidecells">
         <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
           <view class="weui-slidecell">
-            {{item}}
+            {{item.input}}
           </view>
         </mp-slideview>
       </view>
@@ -31,8 +31,4 @@
 
 <view class="time-add" hover-class="plus-over" bindtap="tap2">
    <image class="gar" src="/img/Garbage.png" mode="aspectFit"></image>
-</view>
-
-<view class="time-add" hover-class="plus-over" bindtap="tap3">
-   <image class="hea" src="/img/Heart.png" mode="aspectFit"></image>
 </view>

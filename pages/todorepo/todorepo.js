@@ -3,16 +3,17 @@ let app=getApp()
 
 Page({
   
-  
+  num:0,
   data: {
     testLocal:'test',
 
     task:[
-      '1','2','waibibabo'
+      
     ]
   },
 
   onLoad: function(){
+    console.log("begin");
     this.setData({
        
         slideButtons: [{
@@ -23,27 +24,29 @@ Page({
         }],
     });
 
-    //console.log(app.globalData.task[app.globalData.num]);
 
-    for (let index = 0; index < app.globalData.num; index++) {
-      //task[index].name = app.globalData.task[index];
-     //console.log(task[index].name);
-    }
 
   },
 
   onShow: function () {
-    console.log("begin");
-    var k = this.data;
     
+    var k = this;
+    this.setData({ 
+      num : app.globalData.num
+    });
     for (let index = 0; index < app.globalData.num; index++) {
-      console.log(app.globalData.task[index])
+      
       this.setData({ 
-        
-        'task[index]' : app.globalData.task[index]
+        [`task[${index}]`] : app.globalData.task[index]
       });
 
-     // console.log(k.task[index]);
+    
+    }
+
+    for (let index = 0; index < k.data.task.length; index++) {
+      
+      console.log('=====',k.data.task[index]);
+
     }
   },
 

@@ -1,5 +1,5 @@
 .head{width:750rpx;height: 180rpx;background:rgb(85, 211, 162);}
-.headNum{display: flex; align-items: center; width: 100rpx;height: 50%; margin: 0 auto;color: white;}
+.headNum{ display: flex; align-items: center; width: 30rpx;height: 50%; margin: 0 auto;color: white;}
 .headWord{display: flex; align-items: center; width: 100rpx;height: 50%; margin: 0 auto;color: white;}
 
 .tip{width:150rpx;height: 50rpx; margin-left:20rpx; margin-top: 10rpx;margin-bottom: 10rpx;
