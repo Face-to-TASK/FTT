@@ -12,7 +12,8 @@
     "pages/index/index",
     "pages/addTask/addTask",
     "pages/logs/logs",
-    "pages/notice/notice"
+    "pages/notice/notice",
+    "pages/into/into"
 
     ],
     "window": {
