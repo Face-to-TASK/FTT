@@ -4,30 +4,36 @@
     <view class="TodoItemTitleText">Event</view>
     <view class="TodoItemTitleText">Star</view>
   </view>
+<!--tap_event_num表示任务在todolist的位置-->
+<block wx:for="{{todolist}}" wx:key="index" wx:for-index="event_num">
   <view class="TodoItem">
-    <view class="ItemComponent">任务1</view>
+    <view class="ItemComponent">{{item.event}}</view>
      <view class="ItemComponent">
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
+      <block wx:if="{{item.star<=3 && item.star>=0}}">
+        <!--tap_star_num是亮的星中从左到右数第n-1个星，或暗的-->
+        <block wx:for="{{3-item.star}}" wx:key="index">
+           <image class="star" src="/img/star.png" 
+           bindtap="light_star" 
+           data-tap_star_num="{{index}}"
+           data-tap_event_num="{{event_num}}"
+           ></image>
+        </block>
+        <block wx:for="{{item.star}}" wx:key="index">
+          <image class="star" src="/img/star_sl.png"
+          bindtap="gloom_star" 
+          data-tap_star_num="{{index}}"
+          data-tap_event_num="{{event_num}}"></image>
+        </block>
+        
+      </block>
+      <block wx:else>
+        <text style="color:red">错误</text>
+      </block>
      </view>
   </view>
-  <view class="TodoItem">
-    <view class="ItemComponent">任务2</view>
-     <view class="ItemComponent">
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-     </view>
-  </view>
-  <view class="TodoItem">
-    <view class="ItemComponent">任务3</view>
-     <view class="ItemComponent">
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-      <image class="star" src="/img/star.png"></image>
-     </view>
-  </view>
+  
+</block>
+
   <view class="TodoEndline">
   </view>
 </view>

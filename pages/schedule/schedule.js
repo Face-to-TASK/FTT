@@ -1,18 +1,29 @@
-// pages/lyh/lyh.js
+var util=require('../../utils/util')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    n:3,
+    text:["吃饭","睡觉","打豆豆"],
+    weekday:"加载中",
+    getmonth:"加载中",
+    getday:"加载中"
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var getWeekByDate = util.getWeekByDate(new Date())
+    var getmonth = util.getmonth(new Date())
+    var getday=util.getday(new Date())
+    this.setData({
+      weekday:getWeekByDate,
+      getmonth:getmonth,
+      getday:getday
+    })
   },
 
   /**
@@ -71,6 +82,26 @@ Page({
     })
  
   },
+
+
+
+  tap1: function () {
+ 
+    wx.navigateTo({
+ 
+      url: '/pages/notice/notice',
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
+  },
+
+
 
   /**
    * 用户点击右上角分享

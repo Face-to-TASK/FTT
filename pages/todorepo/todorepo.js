@@ -1,66 +1,87 @@
-// pages/schedule/schedule.js
+
+let app=getApp()
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  
+  num:0,
   data: {
+    testLocal:'test',
+
+    task:[
+      
+    ]
+  },
+
+  onLoad: function(){
+    console.log("begin");
+    this.setData({
+       
+        slideButtons: [{
+          type: 'warn',
+          text: '删除',
+          src:'/img/删 除 .png'
+          
+        }],
+    });
+
+
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
+    
+    var k = this;
+    this.setData({ 
+      num : app.globalData.num
+    });
+    for (let index = 0; index < app.globalData.num; index++) {
+      
+      this.setData({ 
+        [`task[${index}]`] : app.globalData.task[index]
+      });
 
+    
+    }
+
+    for (let index = 0; index < k.data.task.length; index++) {
+      
+      console.log('=====',k.data.task[index]);
+
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+  tap1: function () {
+ 
+    wx.navigateTo({
+      url:"/pages/addTask/addTask",
+ 
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    });
 
+   
+ 
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  tap2: function () {
+    console.log(app.globalData.task[app.globalData.num-1]),
+    wx.navigateTo({
+ 
+      
+      success: function (res) { },
+ 
+      fail: function (res) { },
+ 
+      complete: function (res) { },
+ 
+    })
+ 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
-})
+    
+    slideButtonTap(e) {
+        console.log('slide button tap', e.detail)
+    }
+});

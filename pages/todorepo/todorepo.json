@@ -1,3 +1,16 @@
 {
-  "usingComponents": {}
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "component": true,
+
+  "usingComponents": {
+     "mp-slideview": "weui-miniprogram/slideview/slideview",
+     "mp-cell": "weui-miniprogram/cell/cell",
+     "mp-cells": "weui-miniprogram/cells/cells",
+     "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+
+  
 }

@@ -1,0 +1,78 @@
+<!--pages/todorepo/todorepo.wxml-->
+<view class="TOP">
+<view class="cst1"><!--常数字-->
+  <text class="t1">星期二</text>
+  <text class="t2">本轮时间段</text>
+  <text class="t3">待办数</text>
+</view>
+  
+</view>
+<view class="MID">
+<view class="cst2">
+  <text class="t4">STARS</text>
+  <text class="t5">EVENTS</text>
+</view>
+
+<view class="NOTICE">
+<view class="SHI">
+  <text class="TODO"></text>
+  <text class="DONE"></text>
+</view>
+</view>
+
+<view wx:for="{{10}}">
+  <view class="se" style="display:flex;" >
+  <image class="star1" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star2" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star3" src="/img/star.png" mode="aspectFit"></image>
+
+  <view class="event"></view>
+  </view>
+</view>
+<view class="time" hover-class="plus-over" bindtap="tap1">
+  <image class="time" src="/img/time.png" mode="aspectFit" ></image>
+</view>
+
+<view class="time-add" hover-class="plus-over" bindtap="tap2">
+   <image class="add" src="/img/add-circle.png" mode="aspectFit"></image>
+</view>
+
+
+</view>
+
+
+
+
+
+<modal show="{{showModal}}" height='100%'bindconfirm='modalConfirm'>
+  <view class='modal-content'>
+  
+<view class="NOTICE">
+<view class="SHI">
+  <text class="TODO">待办</text>
+  <view wx:for="{{3}}">
+  <view class="se" style="display:flex;" >
+  <image class="star1" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star2" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star3" src="/img/star.png" mode="aspectFit"></image>
+
+  <view class="event"></view>
+  </view>
+  </view>
+
+
+  <text class="DONE">
+      已办</text>
+  <view wx:for="{{2}}">
+  <view class="se" style="display:flex;" >
+  <image class="star1" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star2" src="/img/star.png" mode="aspectFit"></image>
+  <image class="star3" src="/img/star.png" mode="aspectFit"></image>
+
+  <view class="event"></view>
+  </view>
+  </view>
+</view>
+</view>
+</view>
+</modal>

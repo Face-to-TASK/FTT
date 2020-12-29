@@ -1,15 +1,12 @@
 /* pages/todorepo/todorepo.wxss */
 .TOP{width:750rpx;height: 240rpx;background:rgb(85, 211, 162);overflow: hidden;}
-.var1{color: honeydew;font-size: 23rpx;margin-top: 100rpx;}
-.v1{margin-left: 115rpx;margin-right: 115rpx;}
-.v2{margin-right: 135rpx;}
-.cst1{margin-top: 20rpx;color: honeydew;font-size: 25rpx;}
+.cst1{margin-top: 140rpx;color: honeydew;font-size: 25rpx;}
 .t1{margin-left: 118.75rpx;margin-right: 118.75rpx;}
 .t2{margin-right: 118.75rpx;}
 .cst2{margin-top: 20rpx;color:black;font-size: 25rpx;}
-.t4{margin-left: 118.75rpx;margin-right: 118.75rpx;}
+.t4{margin-left: 100rpx;margin-right: 185rpx;}
 .se{margin-top: 50rpx;}
-.star1{width: 40rpx;height: 40rpx;margin-left: 95rpx;margin-top: 10rpx;}
+.star1{width: 40rpx;height: 40rpx;margin-left: 75rpx;margin-top: 10rpx;}
 .star2{width: 40rpx;height: 40rpx;margin-top: 10rpx;}
 .star3{width: 40rpx;height: 40rpx;margin-top: 10rpx;}
 .event{
@@ -22,5 +19,10 @@
  }
  
 
- .time{width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
- .add{width: 80rpx;height: 80rpx;position: fixed;bottom: 70rpx;right:90rpx ;}
+ .time{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;left: 90rpx;}
+ .add{width: 120rpx;height: 120rpx;position: fixed;bottom: 70rpx;right:90rpx ;}
+
+
+ .NOTICE{margin-top: 20rpx;color:black;font-size: 25rpx;}
+ .TODO{margin-left: 0rpx;margin-right: 185rpx;}
+ .DONE{margin-left: 25rpx;margin-right: 185rpx;}
