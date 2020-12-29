@@ -3,7 +3,8 @@
     "kbone": true,
     "weui": true
   },
-  "pages":[
+  "pages":[ 
+    "pages/into/into",
     "pages/schedule/schedule", 
     "pages/todorepo/todorepo",
     "pages/todopull/todopull",
@@ -13,7 +14,12 @@
     "pages/addTask/addTask",
     "pages/logs/logs",
     "pages/notice/notice",
-    "pages/into/into"
+    "pages/indexs/indexs",
+    "pages/changepsw/changepsw",
+    "pages/dosucces/dosucces",
+    "pages/registered/registered",
+    "pages/continue/continue"
+   
 
     ],
     "window": {

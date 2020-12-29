@@ -1,0 +1,5 @@
+<view class="loginBtnViews"> 
+ <navigator url="/pages/index/index">
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">继续</button>
+</navigator> 
+ </view> 

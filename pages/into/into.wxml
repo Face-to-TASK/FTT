@@ -1,2 +1,4 @@
-<!--pages/into/into.wxml-->
-<text>pages/into/into.wxml</text>
+<scroll-view>
+<image class="first" src="/img/8.jpg">
+</image>
+</scroll-view>
