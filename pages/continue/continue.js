@@ -42,7 +42,13 @@ Page({
   onUnload: function () {
 
   },
-
+  login: function () {
+ 
+    wx.switchTab({
+      url: '../schedule/schedule',
+    })
+ 
+  },
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */

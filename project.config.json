@@ -88,6 +88,18 @@
         {
           "name": "pages/todorepo/todorepo",
           "pathName": "pages/todorepo/todorepo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/notice/notice",
+          "pathName": "pages/notice/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/continue/continue",
+          "pathName": "pages/continue/continue",
           "scene": null
         }
       ]
