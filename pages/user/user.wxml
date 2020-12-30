@@ -1,2 +1,15 @@
-<!--pages/user/user.wxml-->
-<text>1111</text>
+
+<view class="top">
+<image src="../user/download.jpg" class="picture">
+</image>
+<text class="t">名字</text>
+</view>
+<view class="v1">
+  <navigator class="t1" url="../yijian/yijian">意见反馈</navigator>
+</view>
+<view class="v2">
+  <navigator class="t2" url="../kef/kef">联系客服</navigator>
+</view>
+<view class="v3">
+  <navigator class="t3" url="../das/das">打赏作者</navigator>
+</view>

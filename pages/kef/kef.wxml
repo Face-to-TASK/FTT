@@ -1,0 +1,7 @@
+<!--pages/kef/kef.wxml-->
+
+   <view>
+    <button class="b1" type="primary" open-type="contact">联系客服</button>
+  </view>
+
+

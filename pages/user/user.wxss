@@ -1,1 +1,8 @@
-/* pages/user/user.wxss */
+.picture{height: 50px; width: 50px; margin: 40px 20px;}
+.v1{margin: 30px 25px ;border-bottom:1px  solid #dddddd ;padding: 15px;}
+.v2{margin: 30px 25px ;border-bottom:1px solid #dddddd ;padding: 15px;}
+.v3{margin: 30px 25px ;border-bottom:1px solid #dddddd ;padding: 15px;}
+.top{background:rgb(85, 211, 162);
+  display:flex;  
+}
+.t{margin-top: 50px;font-size: 18px;}

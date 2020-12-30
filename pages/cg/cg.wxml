@@ -1,0 +1,9 @@
+<!--pages/cg/cg.wxml-->
+<view style="padding:50px;text-align: center">
+<icon type="success" size="100"></icon>
+<view>
+<text>提交成功</text>
+<text>\n</text>
+<text>谢谢你宝贵的意见</text>
+</view >
+</view>

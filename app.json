@@ -13,6 +13,11 @@
     "pages/index/index",
     "pages/addTask/addTask",
     "pages/logs/logs",
+    "pages/cg/cg",
+    "pages/das/das",
+    "pages/kef/kef",
+    
+    "pages/yijian/yijian",
     "pages/notice/notice",
     "pages/indexs/indexs",
     "pages/changepsw/changepsw",
